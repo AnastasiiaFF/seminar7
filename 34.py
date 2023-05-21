@@ -17,7 +17,7 @@ text = input("Введите стихотворение: ")
 text1 = text.split()
 # f = lambda x: sum(1 for i in x if i in 'a')
 # if len(set(map(f, text1))) == 1:   
-if len(map(lambda x: sum(1 for i in x if i in 'a'), text1)) == 1: 
+if len(set(map(lambda x: sum(1 for i in x if i in 'a'), text1))) == 1: 
     print("Парам пам-пам")
 else:
     print("Пам парам")
